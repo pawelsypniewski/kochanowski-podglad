@@ -1,0 +1,1177 @@
+/* Kochanowskiego · Siatka. Tokeny z tokens.css projektu (Claude Design). */
+
+/* ---------- Kroje (lokalnie, bez Google Fonts) ---------- */
+@font-face { font-family: "Montserrat"; font-style: normal; font-weight: 600; font-display: swap; src: url(../fonts/montserrat-latin-600-normal.woff2) format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Montserrat"; font-style: normal; font-weight: 600; font-display: swap; src: url(../fonts/montserrat-latin-ext-600-normal.woff2) format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: "Montserrat"; font-style: normal; font-weight: 700; font-display: swap; src: url(../fonts/montserrat-latin-700-normal.woff2) format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Montserrat"; font-style: normal; font-weight: 700; font-display: swap; src: url(../fonts/montserrat-latin-ext-700-normal.woff2) format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: "Open Sans"; font-style: normal; font-weight: 400; font-display: swap; src: url(../fonts/open-sans-latin-400-normal.woff2) format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Open Sans"; font-style: normal; font-weight: 400; font-display: swap; src: url(../fonts/open-sans-latin-ext-400-normal.woff2) format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: "Open Sans"; font-style: italic; font-weight: 400; font-display: swap; src: url(../fonts/open-sans-latin-400-italic.woff2) format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Open Sans"; font-style: italic; font-weight: 400; font-display: swap; src: url(../fonts/open-sans-latin-ext-400-italic.woff2) format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: "Open Sans"; font-style: normal; font-weight: 600; font-display: swap; src: url(../fonts/open-sans-latin-600-normal.woff2) format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Open Sans"; font-style: normal; font-weight: 600; font-display: swap; src: url(../fonts/open-sans-latin-ext-600-normal.woff2) format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: "Open Sans"; font-style: normal; font-weight: 700; font-display: swap; src: url(../fonts/open-sans-latin-700-normal.woff2) format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Open Sans"; font-style: normal; font-weight: 700; font-display: swap; src: url(../fonts/open-sans-latin-ext-700-normal.woff2) format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+/* ---------- Tokeny ---------- */
+:root {
+	--line: 28px;
+	--gutter: 28px;
+	/* Marginesy 84/136 przy 1440 px; węższe ekrany proporcjonalnie, szersze: ramka 1440 na środku. */
+	--margin-l: clamp(32px, 5.834vw, 84px);
+	--margin-r: clamp(32px, 9.445vw, 136px);
+	--pad-l: calc(max(0px, (100% - 1440px) / 2) + var(--margin-l));
+	--pad-r: calc(max(0px, (100% - 1440px) / 2) + var(--margin-r));
+	--m-margin: 16px;
+	--m-gutter: 14px;
+
+	--brand-teal: #1ca89e;
+	--primary: #184890;
+	--primary-hover: #0f3a7a;
+	--teal-700: #00796f;
+	--teal-200: #bcedeb;
+	--navy-900: #01204c;
+	--muted-on-deep: #b7c6dc;
+	--line-on-deep: #33507a;
+	--surface: #ffffff;
+	--surface-alt: #f3f7f9;
+	--ink: #14263f;
+	--ink-muted: #4e5f72;
+	--ink-on-brand: #0c1b2e;
+	--border: #d3dee6;
+	--border-strong: #6a7e92;
+	--focus: #00796f;
+
+	--font-head: "Montserrat", sans-serif;
+	--font-body: "Open Sans", sans-serif;
+	--radius-ui: 4px;
+}
+
+/* ---------- Podstawa ---------- */
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+	margin: 0;
+	background: var(--surface);
+	color: var(--ink);
+	font: 400 17px/28px var(--font-body);
+	-webkit-font-smoothing: antialiased;
+}
+img { max-width: 100%; height: auto; }
+a { color: var(--primary); text-underline-offset: 3px; }
+a:hover { color: var(--primary-hover); }
+:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+h1, h2, h3, h4, h5, h6 { text-wrap: balance; overflow-wrap: break-word; }
+@media (prefers-reduced-motion: reduce) {
+	*, *::before, *::after { transition: none !important; animation: none !important; }
+}
+
+.sg-pomin {
+	position: absolute; left: 16px; top: -100px; z-index: 200;
+	padding: 14px 20px; background: var(--primary); color: #fff;
+	font: 600 16px/20px var(--font-body); border-radius: var(--radius-ui);
+}
+.sg-pomin:focus { top: 16px; color: #fff; }
+
+/* Kontener siatki: 12 kolumn (desktop). */
+.sg-siatka {
+	padding-left: var(--m-margin);
+	padding-right: var(--m-margin);
+}
+@media (min-width: 64em) {
+	.sg-siatka {
+		display: grid;
+		grid-template-columns: repeat(12, minmax(0, 1fr));
+		column-gap: var(--gutter);
+		padding-left: var(--pad-l);
+		padding-right: var(--pad-r);
+	}
+}
+
+/* ---------- Przyciski ---------- */
+.sg-przycisk,
+.sg-glowna .wp-block-button__link {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	height: 56px;
+	padding: 0 28px;
+	border: 0;
+	border-radius: var(--radius-ui);
+	background: var(--primary);
+	color: #fff;
+	font: 600 16px/20px var(--font-body);
+	text-decoration: none;
+	transition: background-color 140ms, color 140ms;
+}
+.sg-przycisk:hover,
+.sg-glowna .wp-block-button__link:hover { background: var(--primary-hover); color: #fff; }
+.sg-glowna .is-style-obrys .wp-block-button__link {
+	padding: 0 24px;
+	border: 2px solid var(--primary);
+	background: transparent;
+	color: var(--primary);
+}
+.sg-glowna .is-style-obrys .wp-block-button__link:hover { background: var(--primary); color: #fff; }
+.sg-przycisk--pelny { display: flex; width: 100%; }
+
+/* ---------- Nagłówek ---------- */
+.sg-naglowek {
+	position: relative;
+	z-index: 60;
+	background: var(--surface);
+	border-bottom: 1px solid var(--border);
+}
+.sg-naglowek__gora {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: calc(var(--line) * 3);
+}
+.sg-logo { display: block; }
+.sg-logo img, .sg-mmenu__gora img { display: block; height: 42px; width: auto; }
+.sg-naglowek__cta { display: none; }
+.sg-naglowek__menu {
+	height: 48px;
+	padding: 0 16px;
+	border: 1px solid var(--border-strong);
+	border-radius: var(--radius-ui);
+	background: var(--surface);
+	color: var(--primary);
+	font: 600 16px/20px var(--font-body);
+	cursor: pointer;
+}
+.sg-nav { display: none; }
+.sg-szewron {
+	display: inline-block;
+	width: 7px;
+	height: 7px;
+	border-right: 2px solid currentColor;
+	border-bottom: 2px solid currentColor;
+	transform: translateY(-3px) rotate(45deg);
+	transition: transform 140ms;
+}
+[aria-expanded="true"] > .sg-szewron { transform: translateY(1px) rotate(225deg); }
+
+@media (min-width: 75em) {
+	.sg-naglowek__gora {
+		display: grid;
+		height: calc(var(--line) * 4);
+		padding-top: var(--line);
+		padding-bottom: var(--line);
+	}
+	.sg-logo { grid-column: 1 / span 3; }
+	.sg-logo img { height: calc(var(--line) * 2); }
+	.sg-naglowek__cta { display: flex; grid-column: 11 / span 2; }
+	.sg-naglowek__menu { display: none; }
+
+	.sg-nav {
+		display: block;
+		border-top: 1px solid var(--border);
+		padding-left: var(--pad-l);
+		padding-right: var(--pad-r);
+	}
+	.sg-nav__lista {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		display: flex;
+		column-gap: var(--gutter);
+		height: calc(var(--line) * 2);
+	}
+	.sg-nav__el {
+		position: relative;
+		display: flex;
+		align-items: center;
+		flex-shrink: 0;
+		white-space: nowrap;
+	}
+	.sg-nav__el.is-aktywny::after,
+	.sg-nav__el:has(> [aria-expanded="true"])::after {
+		content: "";
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		height: 4px;
+		background: var(--brand-teal);
+	}
+	.sg-nav__link {
+		display: flex;
+		align-items: center;
+		column-gap: 8px;
+		height: 48px;
+		padding: 0;
+		border: 0;
+		background: none;
+		color: var(--ink);
+		font: 600 16px/28px var(--font-body);
+		text-decoration: none;
+		cursor: pointer;
+		transition: color 140ms;
+	}
+	.sg-nav__link:hover { color: var(--primary); }
+	a.sg-nav__link:hover { text-decoration: underline; text-underline-offset: 4px; }
+
+	.sg-panel {
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 100%;
+		background: var(--surface);
+		border-top: 1px solid var(--border);
+		border-bottom: 1px solid var(--border);
+	}
+	.sg-panel[hidden] { display: none; }
+	.sg-panel__wnetrze {
+		display: grid;
+		grid-template-columns: repeat(4, minmax(0, 1fr));
+		column-gap: var(--gutter);
+		padding: var(--line) var(--pad-r) calc(var(--line) * 2) var(--pad-l);
+	}
+	/* 4 grupy po 3 kolumny = szerokość 12 kolumn siatki minus marginesy. */
+	.sg-panel__tytul {
+		grid-column: 1 / -1;
+		justify-self: start;
+		margin-bottom: var(--line);
+		font: 600 18px/28px var(--font-head);
+		color: var(--primary);
+	}
+	.sg-panel ul { list-style: none; margin: 0; padding: 0; }
+	.sg-panel li a {
+		display: block;
+		font: 400 17px/28px var(--font-body);
+		color: var(--ink);
+		text-decoration: none;
+	}
+	.sg-panel li a:hover, .sg-panel li a[aria-current] { color: var(--primary); text-decoration: underline; }
+}
+
+/* Menu mobilne (pełny ekran). */
+.sg-mmenu {
+	position: fixed;
+	inset: 0;
+	z-index: 120;
+	background: var(--surface);
+	overflow-y: auto;
+}
+.sg-mmenu[hidden] { display: none; }
+.sg-mmenu__gora {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: calc(var(--line) * 3);
+	padding: 0 var(--m-margin);
+	border-bottom: 1px solid var(--border);
+}
+.sg-mmenu__nav { padding: 0 var(--m-margin) calc(var(--line) * 4); }
+.sg-mmenu__nav ul { list-style: none; margin: 0; padding: 0; }
+.sg-mmenu__nav > ul > li { border-bottom: 1px solid var(--border); }
+.sg-mmenu__wiersz {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	min-height: calc(var(--line) * 2);
+}
+.sg-mmenu__wiersz > a, .sg-mmenu__wiersz > span {
+	flex: 1;
+	padding: 14px 0;
+	font: 600 18px/28px var(--font-head);
+	color: var(--primary);
+	text-decoration: none;
+}
+.sg-mmenu__wiersz > button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 48px;
+	height: 48px;
+	border: 0;
+	background: none;
+	color: var(--primary);
+	cursor: pointer;
+}
+.sg-mmenu__wiersz .sg-szewron { width: 9px; height: 9px; }
+.sg-mmenu__pod { margin: 0 0 var(--line) !important; padding: 0 0 0 var(--line) !important; }
+.sg-mmenu__pod a {
+	display: block;
+	padding: 10px 0;
+	font: 400 17px/28px var(--font-body);
+	color: var(--ink);
+	text-decoration: none;
+}
+.sg-mmenu__nav > .sg-przycisk { margin-top: var(--line); }
+@media (min-width: 75em) {
+	.sg-mmenu { display: none !important; }
+}
+html.sg-bez-przewijania { overflow: hidden; }
+
+/* ---------- Strona główna (plansza 01) ---------- */
+.sg-glowna :is(h1, h2, h3, h4, h5, p, figure, blockquote) { margin: 0; }
+.sg-glowna .wp-block-buttons { margin: 0; gap: var(--gutter); }
+.sg-glowna h1 {
+	font: 700 clamp(24px, 7vw, 32px)/42px var(--font-head); /* telefon: najdłuższe słowo tytułu (np. „echokardiograficznego”) mieści się w linii */
+	letter-spacing: -0.01em;
+	color: var(--primary);
+}
+.sg-glowna h2 { font: 700 24px/28px var(--font-head); color: var(--primary); }
+.sg-glowna h3 { font: 600 20px/28px var(--font-head); color: var(--ink); }
+.sg-glowna p { font: 400 17px/28px var(--font-body); color: var(--ink); }
+
+.sg-foto {
+	position: relative;
+	overflow: hidden;
+	background: var(--surface-alt);
+	height: calc(var(--line) * 8);
+}
+.sg-glowna .sg-foto img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+/* Komunikat (dawne okno pop-up) — pasek pod nagłówkiem. */
+.sg-komunikat {
+	background: var(--teal-200);
+	padding: var(--line) var(--m-margin);
+}
+.sg-glowna .sg-komunikat h3 { font: 600 20px/28px var(--font-head); color: var(--primary); }
+.sg-glowna .sg-komunikat p { margin-top: var(--line); font-weight: 700; }
+.sg-glowna .sg-komunikat h5 { font: 600 17px/28px var(--font-body); color: var(--ink); }
+
+/* Sekcje — telefon: jedna kolumna, pary zdjęć obok siebie. */
+.sg-hero,
+.sg-sekcja {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	column-gap: var(--m-gutter);
+	row-gap: var(--line);
+	padding: 0 var(--m-margin) calc(var(--line) * 3);
+}
+.sg-hero > *, .sg-sekcja > * { grid-column: 1 / -1; min-width: 0; }
+.sg-hero { padding-top: var(--line); row-gap: 0; }
+.sg-glowna .sg-hero__tag { margin-top: var(--line); }
+.sg-hero__przyciski { margin-top: var(--line) !important; }
+.sg-hero__foto, .sg-c__foto { display: none; }
+.sg-a__m1, .sg-a__m2, .sg-b__m1, .sg-b__m2 { grid-column: auto; height: calc(var(--line) * 6); }
+.sg-a__tekst > * + *, .sg-b__tekst > * + *, .sg-c__tekst > * + * { margin-top: var(--line) !important; }
+.sg-glowna .sg-b__tekst h3 { margin-top: var(--line); }
+
+@media (max-width: 63.99em) {
+	.sg-hero, .sg-sekcja, .sg-komunikat {
+		padding-left: max(var(--m-margin), (100% - 688px) / 2);
+		padding-right: max(var(--m-margin), (100% - 688px) / 2);
+	}
+	.sg-glowna .wp-block-buttons, .sg-glowna .wp-block-button { width: 100%; }
+	.sg-glowna .wp-block-button__link { display: flex; width: 100%; }
+}
+
+.sg-cytat {
+	background: var(--brand-teal);
+	padding: var(--line) var(--m-margin);
+}
+.sg-glowna .sg-cytat h3 {
+	font: 700 24px/28px var(--font-head);
+	color: var(--ink-on-brand);
+}
+.sg-glowna .sg-cytat p {
+	margin-top: var(--line);
+	font-weight: 600;
+	color: var(--ink-on-brand);
+}
+
+.sg-opinia {
+	border-top: 2px solid var(--brand-teal);
+	padding-top: calc(var(--line) - 2px);
+}
+.sg-glowna .sg-opinia__autor { font: 600 15px/28px var(--font-body); color: var(--ink-muted); }
+
+/* Desktop: siatka 12 kolumn. */
+@media (min-width: 64em) {
+	.sg-komunikat {
+		display: grid;
+		grid-template-columns: repeat(12, minmax(0, 1fr));
+		column-gap: var(--gutter);
+		align-items: start;
+		padding: var(--line) var(--pad-r) var(--line) var(--pad-l);
+	}
+	.sg-glowna .sg-komunikat h3 { grid-column: 1 / span 4; font-size: 22px; }
+	.sg-glowna .sg-komunikat p { grid-column: 5 / span 5; margin-top: 0; }
+	.sg-glowna .sg-komunikat h5 { grid-column: 10 / span 3; }
+
+	.sg-hero,
+	.sg-sekcja {
+		grid-template-columns: repeat(12, minmax(0, 1fr));
+		column-gap: var(--gutter);
+		align-items: start;
+		padding: 0 var(--pad-r) calc(var(--line) * 4) var(--pad-l);
+	}
+	.sg-hero { padding-top: calc(var(--line) * 2); }
+
+	.sg-glowna h1 { font-size: 40px; line-height: 56px; }
+	.sg-glowna h2 { font-size: 30px; line-height: 42px; }
+	.sg-glowna h3 { font-size: 22px; }
+
+	.sg-foto { height: calc(var(--line) * 17); }
+
+	.sg-hero > h1 { grid-column: 4 / span 6; grid-row: 1; }
+	.sg-hero__tag { grid-column: 4 / span 6; grid-row: 2; }
+	.sg-hero__przyciski { grid-column: 4 / span 6; grid-row: 3; margin-top: calc(var(--line) * 2) !important; }
+	.sg-hero__foto { display: block; grid-column: 10 / span 3; grid-row: 1 / span 3; }
+
+	.sg-a__f1 { grid-column: 1 / span 6; grid-row: 1; }
+	.sg-a__h2 { grid-column: 7 / span 6; grid-row: 1; }
+	.sg-cytat {
+		grid-column: 1 / span 6;
+		grid-row: 2;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		height: calc(var(--line) * 17);
+		padding: var(--line);
+	}
+	.sg-glowna .sg-cytat h3 { font-size: 32px; line-height: 42px; letter-spacing: -0.01em; }
+	.sg-a__tekst { grid-column: 7 / span 6; grid-row: 2; }
+	.sg-a__m1, .sg-a__m2, .sg-a__m3, .sg-b__m1, .sg-b__m2 { height: calc(var(--line) * 8); }
+	.sg-a__m1 { grid-column: 1 / span 3; grid-row: 3; }
+	.sg-a__m2 { grid-column: 4 / span 3; grid-row: 3; }
+	.sg-a__m3 { grid-column: 7 / span 3; grid-row: 3; }
+
+	.sg-b__f0 { grid-column: 1 / span 6; grid-row: 1; }
+	.sg-b__tekst { grid-column: 7 / span 6; grid-row: 1; }
+	.sg-b__m1 { grid-column: 1 / span 3; grid-row: 2; }
+	.sg-b__m2 { grid-column: 4 / span 3; grid-row: 2; }
+
+	.sg-c__foto { display: block; grid-column: 1 / span 6; grid-row: 1; }
+	.sg-c__tekst { grid-column: 7 / span 6; grid-row: 1; }
+
+	.sg-opinie { row-gap: calc(var(--line) * 2); }
+	.sg-opinie > h2 { grid-column: 1 / span 6; grid-row: 1; }
+	.sg-opinia:nth-of-type(1) { grid-column: 1 / span 6; grid-row: 2; }
+	.sg-opinia:nth-of-type(2) { grid-column: 7 / span 3; grid-row: 2; }
+	.sg-opinia:nth-of-type(3) { grid-column: 10 / span 3; grid-row: 2; }
+	.sg-opinia:nth-of-type(4) { grid-column: 1 / span 3; grid-row: 3; }
+	.sg-opinia:nth-of-type(5) { grid-column: 4 / span 3; grid-row: 3; }
+	.sg-glowna .sg-opinia__autor { margin-top: var(--line); }
+}
+
+/* ---------- O nas (/o-nas) — słownik strony głównej ---------- */
+.sg-strona-onas .sg-strona__tytul { padding-bottom: calc(var(--line) * 2); }
+.sg-onas__tekst > * + *, .sg-onas__wygoda > * + * { margin-top: var(--line) !important; }
+.sg-onas__wygoda { margin-top: var(--line); }
+
+/* Dwie przychodnie: karty z inc/dane.php ([koch_onas_przychodnie]), linia jak przy opiniach. */
+.sg-onas-przychodnie { row-gap: calc(var(--line) * 2); }
+.sg-placowka {
+	border-top: 2px solid var(--brand-teal);
+	padding-top: calc(var(--line) - 2px);
+}
+.sg-placowka > * + * { margin-top: var(--line) !important; }
+.sg-glowna .sg-placowka__dzielnica { font: 700 13px/28px var(--font-head); letter-spacing: .08em; text-transform: uppercase; color: var(--teal-700); }
+.sg-glowna .sg-placowka__dzielnica + h3 { margin-top: 0 !important; }
+.sg-placowka h3 a { color: var(--primary); text-decoration: none; }
+.sg-placowka h3 a:hover { text-decoration: underline; }
+.sg-placowka address { font-style: normal; }
+.sg-placowka__godziny { display: grid; grid-template-columns: auto 1fr; column-gap: var(--gutter); margin: 0; }
+.sg-placowka__godziny dt { color: var(--ink-muted); }
+.sg-placowka__godziny dd { margin: 0; }
+.sg-placowka__akcje { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; column-gap: var(--gutter); }
+.sg-placowka__akcje a { display: inline-flex; align-items: center; column-gap: 8px; min-height: 48px; font-weight: 600; }
+.sg-onas-galeria > .sg-foto { grid-column: auto; height: calc(var(--line) * 8); }
+
+@media (min-width: 64em) {
+	.sg-onas__duo { grid-column: 1 / span 6; grid-row: 1 / span 2; }
+	.sg-onas__tekst { grid-column: 7 / span 6; grid-row: 1; }
+	.sg-onas__wygoda { grid-column: 7 / span 6; grid-row: 2; }
+	.sg-onas-przychodnie > h2 { grid-column: 1 / span 6; grid-row: 1; }
+	.sg-placowka:nth-of-type(1) { grid-column: 1 / span 6; grid-row: 2; }
+	.sg-placowka:nth-of-type(2) { grid-column: 7 / span 6; grid-row: 2; }
+	.sg-onas-galeria > .sg-foto { grid-column: span 4; height: calc(var(--line) * 17); }
+}
+
+/* ---------- Przychodnie (/nasze-przychodnie, /przychodnia-*) — słownik „O nas” ---------- */
+.sg-strona-przychodnia .sg-strona__tytul, .sg-strona-przychodnie .sg-strona__tytul { padding-bottom: calc(var(--line) * 2); }
+.sg-przycisk.sg-przycisk--obrys { background: transparent; color: var(--primary); box-shadow: inset 0 0 0 2px var(--primary); column-gap: 8px; }
+.sg-przycisk.sg-przycisk--obrys:hover { background: var(--primary); color: #fff; }
+
+.sg-pr__kontakt > * + * { margin-top: var(--line) !important; }
+.sg-glowna .sg-pr__kontakt .sg-placowka__dzielnica + * { margin-top: 0 !important; }
+.sg-pr__adres { font-style: normal; font: 600 20px/28px var(--font-head); color: var(--ink); }
+.sg-glowna .sg-pr__linia + .sg-pr__linia { margin-top: 0 !important; }
+.sg-pr__email { overflow-wrap: anywhere; }
+.sg-pr__przyciski { display: flex; flex-wrap: wrap; gap: 14px var(--gutter); }
+.sg-pr__foto img { object-position: center 35%; }
+
+.sg-pr__tekst > * + * { margin-top: var(--line) !important; }
+.sg-glowna .sg-pr__dzielnice { columns: 2; column-gap: var(--gutter); margin: 0; padding-left: 20px; }
+.sg-pr__dojazd { display: grid; grid-template-columns: auto 1fr; gap: 0 var(--gutter); margin: 0; }
+.sg-pr__dojazd dt { font-weight: 600; }
+.sg-pr__dojazd dd { margin: 0; color: var(--ink-muted); }
+/* Sekcja „Dojazd” na stronie przychodni: linie komunikacji i mapa na całą szerokość pod tekstem. */
+.sg-pr-dojazd .sg-pr__dojazd { grid-template-columns: 1fr; row-gap: 0; }
+.sg-pr-dojazd .sg-pr__dojazd dd { color: var(--ink); }
+.sg-pr-dojazd .sg-pr__dojazd dd + dt { margin-top: calc(var(--line) / 2); }
+.sg-pr__mapa { margin-top: var(--line); }
+.sg-pr__mapa iframe { display: block; width: 100%; height: calc(var(--line) * 12); border: 0; background: var(--surface-alt); }
+
+.sg-pr-galeria > h2 { grid-column: 1 / -1; }
+.sg-pr-galeria > .sg-foto { grid-column: auto; height: calc(var(--line) * 6); }
+.sg-pr-galeria--pion > .sg-foto { height: calc(var(--line) * 9); }
+.sg-pr-galeria--pion > .sg-foto:first-child { grid-column: 1 / -1; height: calc(var(--line) * 12); }
+
+.sg-pr__patron { display: block; }
+.sg-glowna .sg-pr__patron > * + * { margin-top: var(--line); }
+.sg-glowna .sg-pr__patron .sg-pr__patron-etykieta { margin: 0; font: 700 13px/28px var(--font-head); letter-spacing: .08em; text-transform: uppercase; color: var(--ink-on-brand); }
+.sg-glowna .sg-pr__patron h2 { font: 700 24px/28px var(--font-head); color: var(--ink-on-brand); }
+.sg-glowna .sg-pr__patron .sg-pr__patron-etykieta + * { margin-top: 0; }
+.sg-glowna .sg-pr__patron p:not(.sg-pr__patron-etykieta) { font-weight: 400; color: var(--ink-on-brand); }
+.sg-glowna .sg-pr__patron strong { font-weight: 700; }
+.sg-pr__druga {
+	display: flex; flex-direction: column; row-gap: var(--line);
+	border-top: 2px solid var(--brand-teal); padding-top: calc(var(--line) - 2px); text-decoration: none; color: var(--ink);
+}
+.sg-pr__druga-nazwa { display: flex; align-items: center; justify-content: space-between; column-gap: 14px; font: 700 24px/28px var(--font-head); color: var(--primary); }
+.sg-pr__druga:hover .sg-pr__druga-nazwa { text-decoration: underline; text-underline-offset: 4px; }
+.sg-pr__druga .koch-ikona { flex: none; transition: transform 140ms; }
+.sg-pr__druga:hover .koch-ikona { transform: translateX(4px); }
+.sg-pr__druga-adres { color: var(--ink-muted); }
+
+/* „Nasze przychodnie”: telefon — zdjęcie nad swoją kartą; komputer — zdjęcia w rzędzie, karty pod nimi. */
+.sg-pr-hub { row-gap: var(--line); }
+.sg-pr-hub > .sg-foto:nth-of-type(1) { order: 1; }
+.sg-pr-hub > .sg-placowka:nth-of-type(1) { order: 2; margin-bottom: var(--line); }
+.sg-pr-hub > .sg-foto:nth-of-type(2) { order: 3; }
+.sg-pr-hub > .sg-placowka:nth-of-type(2) { order: 4; }
+
+@media (min-width: 64em) {
+	.sg-pr__kontakt { grid-column: 1 / span 6; grid-row: 1; }
+	.sg-pr__foto { grid-column: 7 / span 6; grid-row: 1; }
+	.sg-pr-opis > h2 { grid-column: 1 / span 5; grid-row: 1; }
+	.sg-pr__tekst { grid-column: 7 / span 6; grid-row: 1; }
+	.sg-pr-dojazd .sg-pr__dojazd { grid-template-columns: auto 1fr; column-gap: var(--gutter); }
+	.sg-pr-dojazd .sg-pr__dojazd dd + dt, .sg-pr-dojazd .sg-pr__dojazd dd + dt + dd { margin-top: calc(var(--line) / 2); }
+	.sg-pr__mapa { grid-column: 1 / -1; grid-row: 2; margin-top: calc(var(--line) * 2); }
+	.sg-pr__mapa iframe { height: calc(var(--line) * 16); }
+	.sg-pr-galeria > .sg-foto { grid-column: span 3; height: calc(var(--line) * 9); }
+	.sg-pr-galeria--pion > .sg-foto, .sg-pr-galeria--pion > .sg-foto:first-child { grid-column: span 4; height: calc(var(--line) * 17); }
+	.sg-pr__patron { grid-column: 1 / span 6; grid-row: 1; height: auto; min-height: calc(var(--line) * 8); }
+	.sg-glowna .sg-pr__patron h2 { font-size: 32px; line-height: 42px; letter-spacing: -0.01em; }
+	.sg-pr__druga { grid-column: 7 / span 6; grid-row: 1; }
+	.sg-pr__druga-nazwa { font-size: 30px; line-height: 42px; }
+	.sg-pr-hub { row-gap: calc(var(--line) * 2); }
+	.sg-pr-hub > .sg-foto { order: 0 !important; grid-row: 1; height: calc(var(--line) * 12); }
+	.sg-pr-hub > .sg-foto:nth-of-type(1) { grid-column: 1 / span 6; }
+	.sg-pr-hub > .sg-foto:nth-of-type(2) { grid-column: 7 / span 6; }
+	.sg-pr-hub > .sg-placowka { order: 0 !important; margin-bottom: 0; }
+}
+
+/* ---------- Usługi (szablon „specjalizacja” → page-usluga.php) — słownik „O nas” ---------- */
+.sg-strona-usluga .sg-strona__tytul { padding-bottom: calc(var(--line) * 2); }
+.sg-us__kolaz figure { margin: 0; }
+.sg-us__kolaz img { display: block; width: 100%; height: auto; }
+.sg-us__wstep > * + *, .sg-us__tekst > * + * { margin-top: var(--line) !important; }
+.sg-glowna :is(.sg-us__wstep, .sg-us__tekst) h4 { margin-top: calc(var(--line) * 2) !important; font: 600 20px/28px var(--font-head); color: var(--ink); }
+.sg-glowna :is(.sg-us__wstep, .sg-us__tekst) h5 { font: 600 17px/28px var(--font-head); color: var(--teal-700); }
+.sg-glowna :is(.sg-us__wstep, .sg-us__tekst) h4 + *, .sg-glowna :is(.sg-us__wstep, .sg-us__tekst) h5 + * { margin-top: 8px !important; }
+.sg-glowna :is(.sg-us__wstep, .sg-us__tekst) ul { margin: 0; padding-left: 20px; }
+.sg-glowna :is(.sg-us__wstep, .sg-us__tekst) li { font: 400 17px/28px var(--font-body); }
+.sg-glowna :is(.sg-us__wstep, .sg-us__tekst) li::marker { color: var(--brand-teal); }
+.sg-us__wstep .wp-block-buttons, .sg-us__tekst > .wp-block-buttons { margin-top: calc(var(--line) * 2) !important; }
+.sg-us__tekst figure { margin: 0; }
+/* Para zdjęć detali przed paskiem „Umów wizytę” (kafle „Zdjęcie 2–3”, potem bloki obrazu z klasą sg-foto). */
+.sg-us-galeria > .sg-foto { grid-column: auto; height: calc(var(--line) * 6); }
+.sg-us__tekst figure img { display: block; width: 100%; height: auto; }
+.sg-us-cta::before { content: ""; grid-column: 1 / -1; border-top: 2px solid var(--brand-teal); }
+.sg-glowna .sg-us__cta-tekst { font: 600 20px/28px var(--font-head); color: var(--ink); }
+
+@media (min-width: 64em) {
+	.sg-us__kolaz { grid-column: 1 / span 6; grid-row: 1; }
+	.sg-us__wstep { grid-column: 7 / span 6; grid-row: 1; }
+	.sg-us-gora:not(:has(.sg-us__kolaz)) > .sg-us__wstep { grid-column: 1 / span 8; } /* strona bez zdjęcia na górze */
+	.sg-us-opis > h2 { grid-column: 1 / span 5; grid-row: 1; }
+	.sg-us__tekst { grid-column: 7 / span 6; grid-row: 1; }
+	.sg-us-galeria > .sg-foto { grid-column: span 6; height: calc(var(--line) * 17); }
+	.sg-us-cta { row-gap: var(--line); align-items: center; }
+	.sg-us-cta > .sg-us__cta-tekst { grid-column: 1 / span 6; grid-row: 2; }
+	.sg-us-cta > .sg-pr__przyciski { grid-column: 7 / span 6; grid-row: 2; justify-content: flex-end; }
+}
+
+/* Usługa z pionowym zdjęciem (np. /dietetyka): telefon 4:5 nad tekstem, komputer pełne 2:3 przyklejone obok tekstu. */
+.sg-us-gora--pion .sg-us__kolaz { height: auto; aspect-ratio: 4 / 5; overflow: hidden; }
+.sg-us-gora--pion .sg-us__kolaz figure { height: 100%; }
+.sg-us-gora--pion .sg-us__kolaz img { height: 100%; object-fit: cover; object-position: 50% 62%; }
+@media (min-width: 64em) {
+	.sg-us-gora--pion .sg-us__kolaz { grid-column: 1 / span 5; aspect-ratio: 2 / 3; align-self: start; position: sticky; top: var(--line); }
+}
+
+/* ---------- Cennik (/cennik) ---------- */
+.sg-cen__naglowek > * + *, .sg-cen__tekst > * + * { margin-top: var(--line) !important; }
+.sg-cen__recepcja { display: block; }
+.sg-glowna .sg-cen__recepcja p { margin: 0; font-weight: 400; color: var(--ink-on-brand); }
+.sg-glowna .sg-cen__recepcja strong { display: inline-block; margin-bottom: 8px; font: 700 20px/28px var(--font-head); }
+.sg-cen-przychodnie { row-gap: var(--line); }
+
+@media (min-width: 64em) {
+	.sg-cen__naglowek { grid-column: 1 / span 5; grid-row: 1 / span 2; }
+	.sg-cen__tekst { grid-column: 7 / span 6; grid-row: 1; }
+	.sg-cen__recepcja { grid-column: 7 / span 6; grid-row: 2; height: auto; margin-top: var(--line); }
+	.sg-glowna .sg-cen__recepcja strong { font-size: 24px; line-height: 32px; }
+	.sg-cen-przychodnie > .sg-placowka__dzielnica { grid-row: 1; }
+}
+
+/* ---------- Kontakt, Umów wizytę, rezerwacje — przychodnie obok siebie ---------- */
+.sg-kt-przychodnie { row-gap: calc(var(--line) * 2); }
+.sg-kt__przychodnia { border-top: 2px solid var(--brand-teal); padding-top: calc(var(--line) - 2px); }
+.sg-kt__przychodnia > * + * { margin-top: var(--line) !important; }
+.sg-glowna .sg-kt__przychodnia h2 { font: 700 13px/28px var(--font-head); letter-spacing: .08em; text-transform: uppercase; color: var(--teal-700); }
+.sg-glowna .sg-kt__przychodnia h2 + h3 { margin-top: 0 !important; }
+.sg-glowna .sg-kt__przychodnia h3 { color: var(--primary); }
+/* Nazwa pierwszej przychodni zawsze w dwóch liniach, jak nazwa drugiej (bez <br> w treści — tekst 1:1). */
+.sg-glowna .sg-kt__przychodnia:first-child h3 { max-width: 17em; }
+.sg-glowna .sg-kt__przychodnia h5 { font: 400 17px/28px var(--font-body); color: var(--ink); overflow-wrap: anywhere; }
+.sg-glowna .sg-kt__przychodnia h5 + h5, .sg-glowna .sg-kt__przychodnia p + p { margin-top: 0 !important; }
+.sg-kt__przychodnia iframe { display: block; width: 100%; height: calc(var(--line) * 10); border: 0; background: var(--surface-alt); }
+.sg-kt__przychodnia .wp-block-buttons { margin-top: calc(var(--line) * 2) !important; }
+.sg-uw__tekst > * + * { margin-top: var(--line) !important; }
+.sg-glowna .sg-uw__tekst h4 { font: 600 20px/28px var(--font-head); color: var(--ink); }
+.sg-glowna .todo-migracja { padding: 14px 20px; border: 1px dashed var(--border-strong); color: var(--ink-muted); font-size: 15px; }
+
+@media (min-width: 64em) {
+	/* Wspólne wiersze obu kolumn (subgrid): nazwa w dwóch liniach nie przesuwa adresu, godzin ani mapy obok. */
+	.sg-kt__przychodnia:nth-of-type(1) { grid-column: 1 / span 6; grid-row: 1 / span 8; }
+	.sg-kt__przychodnia:nth-of-type(2) { grid-column: 7 / span 6; grid-row: 1 / span 8; }
+	@supports (grid-template-rows: subgrid) {
+		.sg-kt-przychodnie { row-gap: 0; }
+		.sg-kt__przychodnia { display: grid; grid-template-rows: subgrid; row-gap: 0; align-content: start; }
+		.sg-kt__przychodnia > * { align-self: start; }
+	}
+	.sg-kt__przychodnia iframe { height: calc(var(--line) * 12); }
+	.sg-uw__tekst { grid-column: 1 / span 8; }
+	.sg-us-opis > :first-child { grid-column: 1 / span 5; grid-row: 1; }
+}
+
+/* ---------- Zakres usług (/zakres-uslug) — Onkologia wyróżniona, reszta jako karty ---------- */
+.sg-zu__onko > * + * { margin-top: 0 !important; }
+.sg-glowna .sg-zu__onko h3 { font: 700 24px/28px var(--font-head); }
+.sg-glowna :is(.sg-zu__onko, .sg-zu__karta) h3 a {
+	display: flex; align-items: center; justify-content: space-between; column-gap: 14px;
+	color: var(--primary); text-decoration: none;
+}
+.sg-glowna :is(.sg-zu__onko, .sg-zu__karta) h3 a::after {
+	content: ""; flex: none; width: 24px; height: 24px; background: currentColor; transition: transform 140ms;
+	-webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.5'%3E%3Cpath d='M5 12h14M13 6l6 6-6 6'/%3E%3C/svg%3E") center / contain no-repeat;
+	mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.5'%3E%3Cpath d='M5 12h14M13 6l6 6-6 6'/%3E%3C/svg%3E") center / contain no-repeat;
+}
+.sg-glowna :is(.sg-zu__onko, .sg-zu__karta) h3 a:hover { text-decoration: underline; text-underline-offset: 4px; }
+.sg-glowna :is(.sg-zu__onko, .sg-zu__karta) h3 a:hover::after { transform: translateX(4px); }
+.sg-zu__onko { border-top: 2px solid var(--brand-teal); padding-top: calc(var(--line) - 2px); }
+
+.sg-zu-lista { row-gap: 0; }
+.sg-zu__opis { padding-bottom: var(--line); }
+.sg-zu__karta { border-top: 1px solid var(--border-strong); }
+.sg-glowna .sg-zu__karta h3 { font: 600 20px/28px var(--font-head); }
+.sg-glowna .sg-zu__karta h3 a { min-height: 56px; padding: 14px 0; }
+.sg-glowna .sg-zu__karta--bez-linku h3 { padding: 14px 0; color: var(--ink-muted); }
+.sg-zu-lista > .sg-zu__karta:last-of-type { border-bottom: 1px solid var(--border-strong); }
+
+@media (min-width: 40em) and (max-width: 63.99em) {
+	.sg-zu-lista > .sg-zu__karta { grid-column: auto; }
+	.sg-zu-lista > .sg-zu__karta:nth-last-of-type(-n+2) { border-bottom: 1px solid var(--border-strong); }
+}
+@media (min-width: 64em) {
+	.sg-zu__foto { grid-column: 1 / span 6; grid-row: 1; }
+	.sg-zu__onko { grid-column: 7 / span 6; grid-row: 1; align-self: end; }
+	.sg-glowna .sg-zu__onko h3 { font-size: 40px; line-height: 56px; letter-spacing: -0.01em; }
+	.sg-glowna .sg-zu__onko h3 a::after { width: 32px; height: 32px; }
+	.sg-zu-lista { column-gap: var(--gutter); }
+	.sg-zu-lista > .sg-zu__karta { grid-column: span 4; }
+	.sg-zu-lista > .sg-zu__karta:nth-last-of-type(-n+3) { border-bottom: 1px solid var(--border-strong); }
+	.sg-glowna .sg-zu__karta h3 a, .sg-glowna .sg-zu__karta--bez-linku h3 { min-height: calc(var(--line) * 3); }
+}
+
+/* Karty ze zdjęciem (np. /dla-opiekunow): zdjęcie 3:2, turkusowa linia, tytuł ze strzałką. Karta bez zdjęcia — wiersz nad nimi. */
+.sg-zu-lista--foto { row-gap: calc(var(--line) * 2); }
+.sg-zu-lista--foto > .sg-zu__karta { border: 0 !important; }
+.sg-glowna .sg-do__foto { margin: 0 0 14px; aspect-ratio: 3 / 2; overflow: hidden; background: var(--surface-alt); }
+.sg-do__foto a, .sg-glowna .sg-do__foto img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.sg-do__foto img { transition: transform 300ms ease; }
+.sg-do__foto a:hover img { transform: scale(1.03); }
+.sg-zu-lista--foto > .sg-zu__karta h3 { border-top: 2px solid var(--brand-teal); }
+.sg-glowna .sg-zu-lista--foto > .sg-zu__karta h3 a { min-height: 0; padding: 12px 0 0; }
+@media (min-width: 40em) and (max-width: 63.99em) {
+	.sg-zu-lista--foto > .sg-zu__karta--bez-foto { grid-column: 1 / -1; }
+}
+@media (min-width: 64em) {
+	.sg-zu-lista--foto > .sg-zu__karta { grid-column: span 3; }
+	.sg-zu-lista--foto > .sg-zu__karta--bez-foto { grid-column: 1 / -1; }
+	.sg-zu-lista--foto > .sg-zu__karta--bez-foto h3 { max-width: calc(50% - var(--gutter) / 2); }
+}
+
+/* ---------- Onkologia (/onkologia-weterynaryjna) — komponenty Fotogramu w słowniku Siatki ---------- */
+.sg-strona-onkologia .koch-sekcja { padding-bottom: calc(var(--line) * 3); }
+.sg-strona-onkologia .koch-sekcja--alt { background: var(--surface-alt); padding-top: calc(var(--line) * 2); margin-bottom: calc(var(--line) * 3); }
+.sg-strona-onkologia .koch-sekcja--linia .koch-wrap { border-top: 2px solid var(--brand-teal); padding-top: calc(var(--line) - 2px); }
+.sg-strona-onkologia .koch-wrap {
+	display: grid; grid-template-columns: minmax(0, 1fr); row-gap: var(--line);
+	padding-left: max(var(--m-margin), (100% - 688px) / 2); padding-right: max(var(--m-margin), (100% - 688px) / 2);
+}
+.sg-strona-onkologia .koch-sekcja--linia { padding-left: var(--m-margin); padding-right: var(--m-margin); }
+.sg-strona-onkologia .koch-sekcja--linia .koch-wrap { padding-left: 0; padding-right: 0; }
+.sg-strona-onkologia :is(.koch-wrap, .koch-kolumny, .koch-kolumna-7, .koch-kolumna-tekst, .koch-artykul, .koch-faq__tytul, .koch-faq__lista, .koch-sekcja-naglowek) > * + * { margin-top: var(--line); }
+.sg-strona-onkologia .koch-wrap > * + * { margin-top: 0; }
+.sg-strona-onkologia .koch-kolumny, .sg-strona-onkologia .koch-faq, .sg-strona-onkologia .koch-sekcja-naglowek { display: contents; }
+.sg-strona-onkologia figure { margin: 0; }
+.sg-strona-onkologia figure img { display: block; width: 100%; height: auto; }
+
+/* Typografia komponentów. */
+.sg-glowna .is-style-eyebrow-h, .sg-glowna .is-style-eyebrow, .sg-strona-onkologia .koch-eyebrow, .sg-strona-onkologia .koch-karta__eyebrow {
+	font: 700 13px/28px var(--font-head); letter-spacing: .08em; text-transform: uppercase; color: var(--teal-700);
+}
+.sg-glowna .koch-naglowek-akapit { font: 600 20px/28px var(--font-head); color: var(--ink); }
+.sg-glowna .koch-kolumna-7 > .koch-naglowek-akapit { font: 700 24px/28px var(--font-head); color: var(--primary); }
+.sg-glowna .koch-jak-h2 { font: 700 24px/28px var(--font-head); color: var(--primary); }
+.sg-glowna .is-style-cytat { padding-left: 20px; border-left: 2px solid var(--brand-teal); font: italic 400 20px/28px var(--font-head); color: var(--ink); }
+.sg-glowna .koch-podpis, .sg-strona-onkologia .koch-muted { color: var(--ink-muted); }
+.sg-glowna .koch-podpis { margin-top: 8px !important; padding-left: 22px; font-weight: 600; }
+.sg-strona-onkologia .koch-artykul h4 { font: 600 20px/28px var(--font-head); color: var(--ink); }
+
+/* Karty terapii. */
+.sg-strona-onkologia .koch-karty { display: grid; grid-template-columns: minmax(0, 1fr); gap: calc(var(--line) * 2) var(--gutter); margin-top: var(--line); }
+.sg-strona-onkologia .koch-karta { display: flex; flex-direction: column; border-top: 2px solid var(--brand-teal); padding-top: calc(var(--line) - 2px); }
+.sg-strona-onkologia .koch-karta h3 { margin: 0; font: 600 20px/28px var(--font-head); }
+.sg-strona-onkologia .koch-karta h3 a { color: var(--primary); text-decoration: none; }
+.sg-strona-onkologia .koch-karta h3 a:hover { text-decoration: underline; }
+.sg-strona-onkologia .koch-karta__opis { margin-top: 8px; flex: 1; }
+.sg-strona-onkologia .koch-karta p:last-child { margin-top: 14px; }
+.sg-strona-onkologia .koch-karta__link { font-weight: 600; }
+
+/* Droga pacjenta: 4 kroki z dużymi numerami. */
+.sg-strona-onkologia .koch-droga { list-style: none; margin: var(--line) 0 0; padding: 0; display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--line) var(--gutter); counter-reset: none; }
+.sg-strona-onkologia .koch-droga li { border-top: 1px solid var(--border-strong); padding-top: calc(var(--line) - 1px); }
+.sg-strona-onkologia .koch-krok__nr { display: block; font: 700 40px/56px var(--font-head); color: var(--brand-teal); }
+.sg-glowna .koch-krok__tytul { font: 600 20px/28px var(--font-head); color: var(--ink); }
+.sg-glowna .koch-krok__opis { margin-top: 8px; color: var(--ink-muted); }
+
+/* Duże linki do nowotworów psów i kotów — jak karta drugiej przychodni. */
+.sg-strona-onkologia .koch-duze-linki { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--line) var(--gutter); margin-top: calc(var(--line) * 2); }
+.sg-strona-onkologia .koch-duze-linki h3 { margin: 0; border-top: 2px solid var(--brand-teal); padding-top: calc(var(--line) - 2px); }
+.sg-strona-onkologia .koch-duze-linki a { display: flex; align-items: center; justify-content: space-between; column-gap: 14px; font: 700 24px/28px var(--font-head); color: var(--primary); text-decoration: none; }
+.sg-strona-onkologia .koch-duze-linki a:hover { text-decoration: underline; text-underline-offset: 4px; }
+.sg-strona-onkologia .koch-duze-linki .koch-ikona { flex: none; transition: transform 140ms; }
+.sg-strona-onkologia .koch-duze-linki a:hover .koch-ikona { transform: translateX(4px); }
+
+/* Artykuł + karta lekarza obok. */
+.sg-strona-onkologia .koch-boczne { border-top: 2px solid var(--brand-teal); padding-top: calc(var(--line) - 2px); }
+.sg-strona-onkologia .koch-boczne p { margin: 0; }
+.sg-strona-onkologia .koch-boczne__nazwisko { font: 600 20px/28px var(--font-head); color: var(--ink); }
+.sg-strona-onkologia .koch-boczne p + p { margin-top: 8px; }
+.sg-strona-onkologia .koch-boczne > * + * { margin-top: calc(var(--line) * 2); }
+.sg-strona-onkologia .koch-boczne ul { margin: 8px 0 0; padding-left: 20px; }
+.sg-strona-onkologia .koch-boczne li { font: 400 15px/24px var(--font-body); }
+.sg-strona-onkologia .koch-boczne li + li { margin-top: 4px; }
+.sg-strona-onkologia .is-style-ramka { padding: var(--line); border: 1px dashed var(--border-strong); }
+.sg-strona-onkologia :is(.is-style-todo, .koch-todo) { color: var(--ink-muted); font-style: italic; }
+
+/* FAQ (na razie tylko poza produkcją). */
+.sg-strona-onkologia .is-style-faq { border-top: 1px solid var(--border-strong); padding: 14px 0; }
+.sg-strona-onkologia .is-style-faq summary { cursor: pointer; font: 600 17px/28px var(--font-head); color: var(--ink); }
+.sg-strona-onkologia .is-style-faq summary:hover { color: var(--primary); }
+.sg-strona-onkologia .is-style-faq > :not(summary) { margin-top: 8px; }
+
+@media (min-width: 64em) {
+	.sg-strona-onkologia .koch-sekcja { padding-bottom: calc(var(--line) * 4); }
+	.sg-strona-onkologia .koch-sekcja--alt { padding-top: calc(var(--line) * 3); margin-bottom: calc(var(--line) * 4); }
+	.sg-strona-onkologia .koch-wrap {
+		grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: var(--gutter); align-items: start;
+		padding-left: var(--pad-l); padding-right: var(--pad-r);
+	}
+	.sg-strona-onkologia .koch-sekcja--linia { padding-left: var(--pad-l); padding-right: var(--pad-r); }
+	.sg-strona-onkologia .koch-wrap > * { grid-column: 1 / -1; }
+	.sg-strona-onkologia .koch-kolumna-5 { grid-column: 1 / span 6; }
+	.sg-strona-onkologia .koch-kolumna-7 { grid-column: 7 / span 6; align-self: center; }
+	.sg-strona-onkologia .koch-kolumna-tekst--prawa { grid-column: 7 / span 6; }
+	.sg-strona-onkologia .koch-wrap > .koch-jak-h2, .sg-strona-onkologia .koch-sekcja-naglowek > .koch-jak-h2 { grid-column: 1 / span 5; }
+	.sg-strona-onkologia .koch-wrap > .koch-naglowek-akapit, .sg-strona-onkologia .koch-sekcja-naglowek > .koch-naglowek-akapit { grid-column: 7 / span 6; grid-row: 1; }
+	.sg-glowna .koch-jak-h2, .sg-glowna .koch-kolumna-7 > .koch-naglowek-akapit { font-size: 30px; line-height: 42px; }
+	.sg-strona-onkologia .koch-karty { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+	.sg-strona-onkologia .koch-droga { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+	.sg-strona-onkologia .koch-duze-linki { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+	.sg-strona-onkologia .koch-duze-linki a { font-size: 30px; line-height: 42px; }
+	.sg-strona-onkologia .koch-artykul { grid-column: 1 / span 7; }
+	.sg-strona-onkologia .koch-boczne { grid-column: 9 / span 4; }
+	.sg-strona-onkologia .koch-faq__tytul { grid-column: 1 / span 5; }
+	.sg-strona-onkologia .koch-faq__lista { grid-column: 7 / span 6; margin-top: 0; }
+}
+
+/* ---------- Strony przejściowe (do czasu plansz 02–13) ---------- */
+.sg-okruszki { padding-top: var(--line); font: 400 15px/28px var(--font-body); color: var(--ink-muted); }
+.sg-okruszki > div { grid-column: 1 / -1; }
+.sg-okruszki a { color: var(--ink-muted); }
+.sg-strona__tytul { padding-top: var(--line); }
+/* Tytuł od lewej krawędzi siatki, w linii z okruszkami (9 kolumn: długie tytuły wpisów nie rozciągają się na całą szerokość). */
+.sg-strona__tytul > * { grid-column: 1 / span 9; }
+.sg-strona h1 { margin: 0; font: 700 clamp(24px, 7vw, 32px)/42px var(--font-head); letter-spacing: -0.01em; color: var(--primary); }
+.sg-wpis__data { margin: var(--line) 0 0; color: var(--ink-muted); font-size: 15px; }
+.sg-tresc { padding-top: calc(var(--line) * 2); padding-bottom: calc(var(--line) * 4); }
+.sg-tresc__kolumna { grid-column: 4 / span 6; min-width: 0; }
+.sg-tresc__kolumna > :first-child { margin-top: 0; }
+.sg-tresc :is(p, ul, ol) { margin: 0 0 var(--line); }
+.sg-tresc h2 { margin: calc(var(--line) * 2) 0 var(--line); font: 700 24px/28px var(--font-head); color: var(--primary); }
+.sg-tresc h3 { margin: var(--line) 0; font: 600 20px/28px var(--font-head); color: var(--ink); }
+.sg-tresc :is(h4, h5, h6) { margin: var(--line) 0 0; font: 600 17px/28px var(--font-body); }
+.sg-tresc figure { margin: 0 0 var(--line); }
+.sg-tresc img { display: block; }
+/* Lista wpisów: karty z turkusową linią, jak w reszcie strony. */
+.sg-lista__siatka { grid-column: 1 / -1; display: grid; grid-template-columns: minmax(0, 1fr); gap: calc(var(--line) * 2) var(--gutter); }
+.sg-lista__wpis { display: flex; flex-direction: column; border-top: 2px solid var(--brand-teal); padding-top: calc(var(--line) - 2px); }
+.sg-tresc .sg-lista__wpis h2 { margin: 0; font: 600 20px/28px var(--font-head); }
+.sg-lista__wpis h2 a { color: var(--primary); text-decoration: none; }
+.sg-lista__wpis h2 a:hover { text-decoration: underline; }
+.sg-lista__wpis .sg-wpis__data { margin: 8px 0 0; }
+.sg-tresc .sg-lista__wpis > p:last-child { margin: 14px 0 0; color: var(--ink-muted); font-size: 15px; line-height: 24px; }
+.sg-lista .pagination { grid-column: 1 / -1; margin-top: calc(var(--line) * 2); padding-top: var(--line); border-top: 1px solid var(--border-strong); }
+.sg-lista .nav-links .page-numbers { display: inline-flex; align-items: center; justify-content: center; min-width: 44px; min-height: 44px; padding: 0 12px; border-radius: var(--radius-ui); text-decoration: none; }
+.sg-lista .nav-links .page-numbers.current { background: var(--primary); color: #fff; }
+
+/* Tabele w treści: na wąskim ekranie przewijane we własnym polu, nie rozpychają strony. */
+.sg-tresc table { display: block; max-width: 100%; overflow-x: auto; border-collapse: collapse; margin: 0 0 var(--line); font-size: 15px; line-height: 24px; }
+.sg-tresc :is(td, th) { padding: 10px 14px 10px 0; border-bottom: 1px solid var(--border); vertical-align: top; text-align: left; min-width: 96px; }
+.sg-tresc tr:first-child :is(td, th) { border-bottom: 2px solid var(--brand-teal); }
+
+/* Wpis: boks „Umów wizytę” obok treści (na telefonie pod treścią). */
+.sg-wpis__boczne { margin-top: calc(var(--line) * 2); border-top: 2px solid var(--brand-teal); padding-top: calc(var(--line) - 2px); }
+.sg-wpis__boczne .sg-us__cta-tekst { margin: 0 0 var(--line); font: 600 20px/28px var(--font-head); color: var(--ink); }
+.sg-wpis__boczne .sg-pr__przyciski { flex-direction: column; align-items: stretch; }
+@media (min-width: 40em) and (max-width: 63.99em) { .sg-lista__siatka { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 64em) {
+	.sg-lista__siatka { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+	.sg-wpis .sg-tresc__kolumna { grid-column: 1 / span 7; }
+	.sg-wpis__boczne { grid-column: 9 / span 4; align-self: start; position: sticky; top: var(--line); margin-top: 0; }
+}
+@media (min-width: 64em) {
+	.sg-strona h1 { font-size: 40px; line-height: 56px; }
+	.sg-tresc h2 { font-size: 30px; line-height: 42px; }
+	.sg-tresc h3 { font-size: 22px; }
+}
+
+/* ---------- Stopka ---------- */
+.sg-stopka {
+	background: var(--navy-900);
+	color: #fff;
+	font-family: var(--font-body);
+}
+.sg-stopka a { color: #fff; }
+.sg-stopka :focus-visible { outline-color: #fff; }
+.sg-stopka p { margin: 0; }
+
+.sg-kontakt {
+	display: flex;
+	flex-direction: column;
+	row-gap: var(--line);
+	padding-top: calc(var(--line) * 2);
+	padding-bottom: calc(var(--line) * 2);
+	font: 400 15px/21px var(--font-body);
+	color: var(--muted-on-deep);
+}
+.sg-kontakt__h { margin: 0; font: 600 20px/28px var(--font-head); color: #fff; }
+.sg-kontakt__nazwa { color: #fff; font-weight: 600; }
+.sg-kontakt__email { overflow-wrap: anywhere; }
+.sg-kontakt__regulaminy { list-style: none; margin: 0; padding: 0; }
+.sg-kontakt__regulaminy li + li { margin-top: 21px; }
+
+.sg-stopka__dol {
+	border-top: 1px solid var(--line-on-deep);
+	padding-top: calc(var(--line) * 2);
+	padding-bottom: calc(var(--line) * 3);
+}
+.sg-stopka__logo { display: block; margin-bottom: calc(var(--line) * 2 - 14px); }
+.sg-stopka__logo img { display: block; height: 42px; width: auto; }
+.sg-stopka__grupa { list-style: none; margin: 0 0 var(--line); padding: 0; }
+.sg-stopka__grupa a { display: block; padding: 10px 0; text-decoration: none; }
+.sg-stopka__grupa a:hover { text-decoration: underline; }
+.sg-stopka__top a { font: 600 17px/28px var(--font-head); color: #fff; }
+.sg-stopka__sub a { font: 400 17px/28px var(--font-body); color: var(--muted-on-deep); }
+.sg-stopka__odstep { display: none; }
+.sg-stopka__cookies { display: block; margin-bottom: var(--line); font: 400 17px/28px var(--font-body); color: var(--muted-on-deep) !important; }
+.sg-stopka__etykieta { font: 700 13px/28px var(--font-head); letter-spacing: .08em; color: #fff; }
+.sg-stopka__ikony { display: flex; column-gap: 8px; margin-left: -12px; }
+.sg-stopka__ikony a { display: flex; align-items: center; justify-content: center; width: 48px; height: 48px; }
+.sg-stopka__ikony a:hover { color: var(--teal-200); }
+.sg-stopka__prawa {
+	margin-top: var(--line) !important;
+	padding-top: var(--line);
+	border-top: 1px solid var(--line-on-deep);
+	font: 400 15px/21px var(--font-body);
+	color: var(--muted-on-deep);
+}
+
+@media (min-width: 64em) {
+	.sg-kontakt {
+		display: grid;
+		row-gap: 0;
+		padding-top: calc(var(--line) * 3);
+		padding-bottom: calc(var(--line) * 3);
+	}
+	.sg-kontakt__h { grid-column: 1 / span 6; grid-row: 1; margin-bottom: var(--line); font-size: 22px; }
+	.sg-kontakt__placowka--1 { grid-column: 1 / span 3; grid-row: 2; }
+	.sg-kontakt__placowka--2 { grid-column: 4 / span 3; grid-row: 2; }
+	.sg-kontakt__regulaminy { grid-column: 7 / span 3; grid-row: 2; }
+
+	.sg-stopka__dol { padding-bottom: var(--line); }
+	.sg-stopka__logo { grid-column: 1 / span 3; grid-row: 1; margin-bottom: calc(var(--line) * 2); }
+	.sg-stopka__logo img { height: calc(var(--line) * 2); }
+	.sg-stopka__grupa { grid-row: 2; margin: 0; grid-column: span 3; }
+	.sg-stopka__grupa a { padding: 0; }
+	.sg-stopka__odstep { display: block; font: 600 17px/28px var(--font-head); }
+	.sg-stopka__social { grid-column: 10 / span 3; grid-row: 3; margin-top: var(--line); }
+	.sg-stopka__prawa {
+		grid-column: 1 / -1;
+		grid-row: 4;
+		margin-top: calc(var(--line) * 2) !important;
+		font-size: 15px;
+		line-height: 28px;
+	}
+}
+
+/* Pasek akcji (telefon). */
+.sg-pasek {
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 100;
+	display: grid;
+	grid-template-columns: 1fr 1.5fr 1fr;
+	height: 56px;
+	background: var(--navy-900);
+	border-top: 1px solid var(--line-on-deep);
+}
+.sg-pasek a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	font: 600 16px/20px var(--font-body);
+	text-decoration: none;
+}
+.sg-pasek a:focus-visible { outline: 2px solid #fff; outline-offset: -4px; }
+.sg-pasek__glowny { background: var(--primary); }
+.sg-pasek__glowny:hover { background: var(--primary-hover); }
+body { padding-bottom: 56px; }
+/* Wysuwane okienko Vetineo (235 × 140 px, reklama aplikacji z kodem QR): na telefonie zasłaniało przycisk „Umów wizytę”,
+   więc pokazujemy je dopiero tam, gdzie znika dolny pasek.
+   Pasek zostaje do 1199 px: dopiero od 1200 px nagłówek ma własny przycisk „Umów wizytę”. */
+#com-vetineo-info-widget-sWidget { display: none !important; }
+@media (min-width: 75em) {
+	.sg-pasek { display: none; }
+	body { padding-bottom: 0; }
+	#com-vetineo-info-widget-sWidget { display: block !important; bottom: 24px !important; }
+}
+/* Telefony w treści /kontakt i /umow-wizyte: cel dotyku 44 px bez zmiany rytmu wiersza. */
+.sg-tel { display: inline-block; padding: 8px 0; margin: -8px 0; }
+
+/* Znaczniki „DO UZUPEŁNIENIA” z treści — tylko poza produkcją. */
+.koch-env-production .koch-tylko-dev { display: none !important; }
+
+/* Wpis: nawigacja i „Więcej wpisów”. */
+.sg-wpis .post-navigation { margin-top: calc(var(--line) * 2); padding-top: var(--line); border-top: 1px solid var(--border); }
+.sg-wpis .nav-links { display: grid; gap: var(--line); }
+.sg-wpis .nav-links a { display: block; font: 600 17px/28px var(--font-head); text-decoration: none; }
+.sg-wpis__nav-etykieta { display: block; font: 400 15px/28px var(--font-body); color: var(--ink-muted); }
+.sg-wpis .screen-reader-text, .sg-lista .screen-reader-text { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.sg-wiecej { row-gap: var(--line); padding-bottom: calc(var(--line) * 4); }
+.sg-wiecej__h { grid-column: 1 / -1; margin: 0 0 var(--line); font: 700 24px/28px var(--font-head); color: var(--primary); }
+.sg-wiecej__wpis { grid-column: span 3; margin-bottom: var(--line); }
+.sg-wiecej__obraz { display: block; aspect-ratio: 3 / 2; overflow: hidden; background: var(--surface-alt); margin-bottom: 14px; }
+.sg-wiecej__obraz img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.sg-wiecej h3 { margin: 0; font: 600 17px/28px var(--font-head); }
+.sg-wiecej h3 a { color: var(--ink); text-decoration: none; }
+.sg-wiecej h3 a:hover { color: var(--primary); text-decoration: underline; }
+.sg-lista .nav-links { display: flex; flex-wrap: wrap; gap: 8px 16px; font-weight: 600; }
+@media (min-width: 64em) {
+	.sg-wiecej__h { font-size: 30px; line-height: 42px; }
+	.sg-wpis .nav-links { grid-template-columns: 1fr 1fr; }
+}
+.sg-lista__kategoria { margin: 0 0 4px !important; font: 700 13px/28px var(--font-head); letter-spacing: .08em; text-transform: uppercase; }
+.sg-lista__kategoria a { color: var(--teal-700); text-decoration: none; }
+
+/* Kafel w miejscu zdjęcia (jak „Foto” na planszy): jasne pole z przekątną; opis tylko poza produkcją. */
+.sg-kafel {
+	background:
+		linear-gradient(to top right, transparent calc(50% - 0.75px), var(--border) 50%, transparent calc(50% + 0.75px)),
+		var(--surface-alt);
+	display: flex;
+	align-items: flex-end;
+}
+.sg-glowna .sg-kafel__tekst {
+	width: 100%;
+	padding: 12px 14px;
+	background: rgba(255, 255, 255, .9);
+	border-top: 1px solid var(--border);
+}
+.sg-glowna .sg-kafel__tekst p { font: 400 13px/20px var(--font-body); color: var(--ink-muted); }
+.sg-glowna .sg-kafel__tekst .sg-kafel__nr { color: var(--ink); }
+.sg-glowna .sg-kafel__tekst .sg-kafel__opis { color: var(--ink); margin: 2px 0 6px; }
+@media (max-width: 63.99em) {
+	/* Opis nie mieści się w polu 172 × 168 — kafel rośnie, póki nie ma zdjęcia. */
+	.koch-env-local .sg-kafel, .koch-env-development .sg-kafel, .koch-env-staging .sg-kafel { height: auto; min-height: calc(var(--line) * 6); }
+}
+@media (max-width: 63.99em) {
+	.sg-kafel:is(.sg-a__f1, .sg-a__m3, .sg-b__f0, .sg-onas__duo, .sg-us__kolaz) { min-height: calc(var(--line) * 8); }
+	/* Zdjęcia hero i sekcji C są na telefonie ukryte — display: flex kafla nie może tego nadpisać. */
+	.sg-kafel:is(.sg-hero__foto, .sg-c__foto) { display: none; }
+}
+
+/* ---------- Strona główna w słowniku podstron (2026-11-09, zastępuje motyw kafla) ----------
+   Białe tło, jasnoszare pasy jak „Terapie onkologiczne”, turkusowa linia nad kartami,
+   zaokrąglone przyciski z reszty strony. Tekst strony bez zmian. */
+html:has(body.home), body.home { overflow-x: clip; }
+body.home {
+	--bleed-l: var(--m-margin);
+	--bleed-r: var(--m-margin);
+}
+.sg-glowna .sg-foto figure { height: 100%; margin: 0; }
+body.home .sg-sekcja { padding-bottom: 0; padding-top: calc(var(--line) * 4); }
+
+/* Pierwszy ekran — telefon: zdjęcie nad tytułem, jak na podstronach. */
+body.home .sg-hero { padding-top: var(--line); padding-bottom: 0; }
+body.home .sg-hero__foto {
+	display: block;
+	position: relative;
+	grid-row: 1;
+	height: calc(var(--line) * 12);
+	margin-bottom: calc(var(--line) * 2);
+}
+body.home .sg-hero__foto figure { position: absolute; inset: 0; }
+body.home .sg-hero__foto .sg-hero__zmiana { opacity: 0; }
+/* Do czasu dodania klasy sg-kadry (skrypt, po załadowaniu strony) kadry 2 i 3 nie są pobierane. */
+body.home .sg-hero__foto:not(.sg-kadry) .sg-hero__zmiana { display: none; }
+body.home .sg-przenikanie figure { opacity: 0; transition: opacity 1600ms ease; }
+body.home .sg-przenikanie figure.is-on { opacity: 1; }
+.sg-glowna .sg-hero__foto img { object-position: 50% 40%; }
+body.home .sg-hero > h1 { grid-row: 2; }
+body.home .sg-hero__tag { grid-row: 3; }
+body.home .sg-hero__przyciski { grid-row: 4; }
+
+/* Przychodnie i założyciele. */
+body.home .sg-a__h2 { order: -1; }
+@media (max-width: 63.99em) { body.home .sg-glowna .sg-a__h2 { font-size: 20px; line-height: 28px; } }
+@media (min-width: 40em) and (max-width: 63.99em) { body.home .sg-hero__foto { height: calc(var(--line) * 18); } }
+body.home .sg-a__f1 { height: calc(var(--line) * 10); }
+.sg-foto--para { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: var(--m-gutter); background: none; }
+.sg-foto--para img { object-position: 50% 20%; }
+/* Rząd zdjęć przychodni: stałe 3:2 na każdym ekranie — szyld witryny nie jest docinany. */
+body.home .sg-a__m1, body.home .sg-a__m2, body.home .sg-a__m3 { height: auto; aspect-ratio: 3 / 2; }
+body.home .sg-status { grid-column: auto; margin: 0; font: 600 15px/24px var(--font-body); color: var(--ink-muted); min-height: 48px; }
+body.home .sg-status:not(:empty)::before {
+	content: "";
+	display: inline-block;
+	width: 8px; height: 8px;
+	margin-right: 8px;
+	border-radius: 50%;
+	background: var(--border-strong);
+	vertical-align: 1px;
+}
+body.home .sg-status[data-stan="open"]::before { background: var(--teal-700); }
+body.home .sg-status[data-stan="soon"]::before { background: #a36a00; }
+
+/* Fraszka: jasnoszary pas na całą szerokość, jak pasy sekcji na podstronach. */
+body.home .sg-cytat {
+	order: 10;
+	position: relative;
+	isolation: isolate;
+	height: auto;
+	margin-top: calc(var(--line) * 3);
+	padding: calc(var(--line) * 2) 0;
+	background: var(--surface-alt);
+}
+body.home .sg-cytat::before {
+	content: "";
+	position: absolute;
+	inset: 0 calc(var(--bleed-r) * -1) 0 calc(var(--bleed-l) * -1);
+	z-index: -1;
+	background: var(--surface-alt);
+}
+body.home .sg-glowna .sg-cytat h3 { font: 700 24px/32px var(--font-head); letter-spacing: -0.01em; color: var(--primary); border-left: 3px solid var(--brand-teal); padding-left: var(--line); }
+body.home .sg-glowna .sg-cytat p { margin-top: var(--line); padding-left: calc(var(--line) + 3px); font: 400 15px/24px var(--font-body); color: var(--ink-muted); }
+
+/* Onkologia. */
+body.home .sg-b__f0 { height: calc(var(--line) * 12); }
+.sg-glowna .sg-b__f0 img { object-position: 50% 25%; }
+
+/* Chirurgia na jasnoszarym pasie. */
+body.home .sg-c { margin-top: calc(var(--line) * 4); padding-top: calc(var(--line) * 3); padding-bottom: calc(var(--line) * 3); background: var(--surface-alt); }
+body.home .sg-c__tekst { grid-row: 1; }
+body.home .sg-c__foto { display: block; grid-row: 2; height: calc(var(--line) * 10); margin-top: var(--line); }
+
+/* Opinie: karty z turkusową linią, jak karty terapii. */
+body.home .sg-opinie { row-gap: calc(var(--line) * 2); padding-bottom: calc(var(--line) * 4); }
+body.home .sg-glowna .sg-opinia > p:first-child { font-style: italic; }
+
+@media (min-width: 64em) {
+	body.home { --bleed-l: calc(max(0px, (100vw - 1440px) / 2) + var(--margin-l)); --bleed-r: calc(max(0px, (100vw - 1440px) / 2) + var(--margin-r)); }
+	body.home .sg-sekcja { padding-top: calc(var(--line) * 5); }
+	.sg-foto--para { column-gap: var(--gutter); }
+
+	/* Pierwszy ekran: tytuł z lewej (kolumny 1–6), zdjęcie z prawej (7–12) — jak nagłówki podstron. */
+	body.home .sg-hero { padding-top: calc(var(--line) * 2); align-items: center; }
+	body.home .sg-hero > h1 { grid-column: 1 / span 6; grid-row: 1; align-self: end; }
+	body.home .sg-glowna .sg-hero > h1 { font-size: 40px; line-height: 56px; }
+	body.home .sg-hero__tag { grid-column: 1 / span 6; grid-row: 2; }
+	body.home .sg-hero__przyciski { grid-column: 1 / span 6; grid-row: 3; align-self: start; }
+	body.home .sg-hero > .sg-hero__przyciski { margin-top: calc(var(--line) * 2) !important; }
+	body.home .sg-hero__foto { grid-column: 7 / span 6; grid-row: 1 / span 3; height: calc(var(--line) * 18); margin: 0; }
+
+	/* Przychodnie: nagłówek, para założycieli obok tekstu, rząd trzech zdjęć ze statusem. */
+	body.home .sg-a { row-gap: 0; }
+	body.home .sg-a__h2 { grid-column: 1 / span 8; grid-row: 1; }
+	body.home .sg-a__f1 { grid-column: 1 / span 6; grid-row: 2; height: calc(var(--line) * 16); margin-top: calc(var(--line) * 2); }
+	body.home .sg-a__tekst { grid-column: 7 / span 6; grid-row: 2; margin-top: calc(var(--line) * 2); }
+	body.home .sg-a__m1, body.home .sg-a__m2, body.home .sg-a__m3 { grid-row: 3; height: auto; aspect-ratio: 3 / 2; margin-top: calc(var(--line) * 2); }
+	body.home .sg-a__m1 { grid-column: 1 / span 4; }
+	body.home .sg-a__m2 { grid-column: 5 / span 4; }
+	body.home .sg-a__m3 { grid-column: 9 / span 4; }
+	body.home .sg-status { grid-row: 4; margin-top: 12px; }
+	body.home .sg-status--koch { grid-column: 1 / span 4; }
+	body.home .sg-status--kond { grid-column: 5 / span 4; }
+	body.home .sg-cytat {
+		grid-column: 1 / -1;
+		grid-row: 5;
+		display: grid;
+		grid-template-columns: repeat(12, minmax(0, 1fr));
+		column-gap: var(--gutter);
+		margin-top: calc(var(--line) * 4);
+		padding: calc(var(--line) * 3) 0;
+	}
+	body.home .sg-glowna .sg-cytat h3 { grid-column: 1 / span 8; font-size: 30px; line-height: 42px; }
+	body.home .sg-glowna .sg-cytat p { grid-column: 1 / span 6; }
+
+	/* Onkologia: zdjęcie z lewej, tekst z prawej, dwa zdjęcia pod tekstem. */
+	body.home .sg-b { row-gap: 0; }
+	body.home .sg-b__f0 { grid-column: 1 / span 6; grid-row: 1 / span 2; height: calc(var(--line) * 20); }
+	body.home .sg-b__tekst { grid-column: 7 / span 6; grid-row: 1; }
+	body.home .sg-b__m1, body.home .sg-b__m2 { grid-row: 2; align-self: end; height: calc(var(--line) * 7); margin-top: calc(var(--line) * 2); }
+	body.home .sg-b__m1 { grid-column: 7 / span 3; }
+	body.home .sg-b__m2 { grid-column: 10 / span 3; }
+
+	/* Chirurgia: zdjęcie z lewej, tekst z prawej, na jasnoszarym pasie. */
+	body.home .sg-c { margin-top: calc(var(--line) * 5); padding-top: calc(var(--line) * 3); padding-bottom: calc(var(--line) * 3); }
+	body.home .sg-c__foto { grid-column: 1 / span 6; grid-row: 1; height: calc(var(--line) * 14); margin-top: 0; }
+	body.home .sg-c__tekst { grid-column: 7 / span 6; grid-row: 1; align-self: center; }
+
+	/* Opinie: nagłówek, potem karty w trzech kolumnach (jak karty terapii). */
+	body.home .sg-opinie > h2 { grid-column: 1 / span 6; grid-row: 1; }
+	body.home .sg-opinia:nth-of-type(1) { grid-column: 1 / span 4; grid-row: 2; }
+	body.home .sg-opinia:nth-of-type(2) { grid-column: 5 / span 4; grid-row: 2; }
+	body.home .sg-opinia:nth-of-type(3) { grid-column: 9 / span 4; grid-row: 2; }
+	body.home .sg-opinia:nth-of-type(4) { grid-column: 1 / span 4; grid-row: 3; }
+	body.home .sg-opinia:nth-of-type(5) { grid-column: 5 / span 4; grid-row: 3; }
+	body.home .sg-glowna .sg-opinia__autor { margin-top: var(--line); }
+}
+
+/* Strony /rezerwacja-wizyt-*: karta przychodni (telefon, godziny) do czasu wstawienia widżetu rezerwacji. */
+@media (min-width: 64em) {
+	.sg-rez-kontakt > .sg-placowka { grid-column: 1 / span 6; grid-row: 1; }
+}
